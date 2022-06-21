@@ -2,24 +2,13 @@
 require_once "../Controllers/login-controller.php";
 ?>
 
-
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-    <title>Document</title>
-</head>
+<!-- On inclut le header contenant le cdn, title, doctype -->
+<?php include 'elements/header.php' ?>
 
 <body>
     <form action="" method="POST">
-
-        <div class="row justify-content-center">
+        <h1 class="text-center my-4">Connexion</h1>
+        <div class="row justify-content-center pt-5">
             <div class="col-3 border border-secondary rounded shadow p-4">
 
                 <div class="my-2">
@@ -41,6 +30,7 @@ require_once "../Controllers/login-controller.php";
                 <button class="btn btn-dark my-3">Valider</button>
             </div>
         </div>
+    </form>
 </body>
 
 </html>
