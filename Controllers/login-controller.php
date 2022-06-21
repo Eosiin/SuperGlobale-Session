@@ -14,7 +14,7 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
     if ($_POST['login'] == '') {
         $errors['login'] = "Champ obligatoire";
         // si login n'est pas égale à notre variable
-    } elseif ($_POST['login'] != $login) {
+    } else if ($_POST['login'] != $login) {
         $errors['login'] = 'Login incorrect';
     }
 
@@ -22,7 +22,7 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
     if ($_POST['password'] == '') {
         $errors['password'] = "Champ obligatoire";
         // Si password correspond au password hashé
-    } elseif (!password_verify($_POST['password'], $passwordHash)) {
+    } else if (!password_verify($_POST['password'], $passwordHash)) {
         $errors['password'] = 'Mot de passe incorrect';
     }
 
