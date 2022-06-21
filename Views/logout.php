@@ -1,5 +1,7 @@
 <?php
+// Utilisation de session_start pour manipuler les variables de $_SESSION
 session_start();
+// Require du Controller respectif
 require_once "../Controllers/logout-controller.php";
 ?>
 

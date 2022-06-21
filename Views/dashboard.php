@@ -1,10 +1,9 @@
 <?php
+// Utilisation de session_start pour manipuler les variables de $_SESSION
 session_start();
+// Require du Controller respectif
 require_once('../Controllers/dashboard-controller.php');
 ?>
-
-
-
 
 <?php include 'elements/header.php' ?>
 
@@ -14,7 +13,6 @@ require_once('../Controllers/dashboard-controller.php');
     <div class="text-center">
         <a class=" btn btn-secondary" href="logout.php">Deconnexion</a>
     </div>
-
 
 </body>
 
