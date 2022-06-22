@@ -1,0 +1,16 @@
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+.background{
+    background: rgba(0,0,0,0) url("../img/header.webp");
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+.foto {
+    height: 20rem;
+    width: auto;
+}
