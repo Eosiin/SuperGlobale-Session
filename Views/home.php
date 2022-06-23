@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // Nous appelons le controller repspectif
 require_once "../Controllers/home-controller.php";
 ?>
@@ -76,7 +78,7 @@ require_once "../Controllers/home-controller.php";
                             </div>
                         </div>
                     </div>
-                    
+
                 <?php } ?>
             </tbody>
         </table>

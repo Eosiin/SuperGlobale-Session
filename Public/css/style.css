@@ -11,7 +11,7 @@ h1 {
     background-blend-mode: darken;
 }
 
-.login {
+.log {
     background: rgba(0, 0, 0, 0) url("../img/header.webp");
     background-position: center;
     background-repeat: no-repeat;

@@ -1,5 +1,5 @@
-    <!-- Barre de navigation -->
     <header class="background">
+        <!-- Barre de navigation -->
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid ">
                 <a class="navbar-brand text-light" href="home.php"><i class="bi bi-house-heart-fill fs-2"></i></a>
@@ -12,7 +12,13 @@
                             <a class="nav-link text-light" href="#">Paramètres</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="login.php">Connexion</a>
+                            <!-- Nous controllons si la $_SESSION['USER'] isset -->
+                            <?php if (isset($_SESSION['USER'])) { ?>
+                                <a class="nav-link text-light" href="logout.php">Deconnexion</a>
+                            <?php } else { ?>
+                                <a class="nav-link text-light" href="login.php">Connexion</a>
+                            <?php } ?>
+
                         </li>
 
                     </ul>

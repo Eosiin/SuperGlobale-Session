@@ -35,6 +35,6 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
             'firstname' => 'Jean',
             'role' => 1
         ];
-        header('Location: dashboard.php');
+        header('Location: home.php');
     }
 }
