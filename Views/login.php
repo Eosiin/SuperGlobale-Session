@@ -1,21 +1,21 @@
 <?php
-// Utilisation de session_start pour manipuler les variables de $_SESSION
+// Utilisation de session_start pour manipuler les variables de $_SESSION : Creation / Manipulation
 session_start();
 // Require du Controller respectif
 require_once "../Controllers/login-controller.php";
 ?>
 
-<!-- On inclut le header contenant le cdn, title, doctype -->
-<?php include 'elements/header.php' ?>
+<?php include 'elements/top-page.php' ?>
 
-<body>
+<body class="d-flex flex-column min-vh-100 login">
+    <!-- Formulaire de connexion -->
     <form action="" method="POST">
-        <h1 class="text-center my-4">Connexion</h1>
-        <div class="row justify-content-center pt-5">
-            <div class="col-3 border border-secondary rounded shadow p-4">
+        <h1 class="text-center bg-light p-3 my-5">Connexion au site</h1>
+        <div class="row justify-content-center pt-2">
+            <div class="col-lg-3 col-10 bg-light border border-secondary rounded shadow p-4">
 
                 <div class="my-2">
-                    <label for="login">Login</label><span class="ms-2 text-danger"><?= isset($errors['login']) ? $errors['login'] : '' ?></span>
+                    <label for="login">Identifiant</label><span class="ms-2 text-danger"><?= isset($errors['login']) ? $errors['login'] : '' ?></span>
                     <br>
                     <input type="text" id="login" name="login" placeholder="ex. DURANT">
                 </div>
@@ -26,14 +26,21 @@ require_once "../Controllers/login-controller.php";
                     <input type="password" id="password" name="password">
                 </div>
                 <div class="mt-4">
-                    <input type="checkbox" id="cgu" name="cgu">
-                    <label for="cgu">Rester connecté</label>
+                    <input type="checkbox" id="stayConnected" name="stayConnected">
+                    <label for="stayConnected">Rester connecté</label>
+                </div>
+                <button class="btn btn-dark my-3">Connexion</button>
+                <div class="text-center">
+                    <a class="text-decoration-none text-secondary" href="home.php">Retour Accueil</a>
                 </div>
 
-                <button class="btn btn-dark my-3">Valider</button>
             </div>
+
         </div>
     </form>
+
+    <?php include 'elements/footer.php' ?>
+
 </body>
 
 </html>

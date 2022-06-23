@@ -4,12 +4,19 @@ h1 {
 
 .background {
     background: rgba(0, 0, 0, 0) url("../img/header.webp");
-    height: 40rem;
+    height: 25rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+}
 
+.login {
+    background: rgba(0, 0, 0, 0) url("../img/header.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
 }
 
 .foto {
@@ -23,9 +30,10 @@ h1 {
 }
 
 .tableau {
-    background-color: #00D0F8;
+    background-color: #02b2d5;
 }
+
 footer {
-    height: 20vh ;
-    background-color: #00D0F8;
+    height: 15vh ;
+    background-color: #02b2d5;
 }
