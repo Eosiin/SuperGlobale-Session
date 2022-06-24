@@ -1,0 +1,44 @@
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0) url("../img/rose.jpg");
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.log {
+    background: rgba(0, 0, 0, 0) url("../img/rose.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.foto {
+    height: 20rem;
+    width: auto;
+}
+
+.liste {
+    height: 4rem;
+    width: auto;
+}
+
+.tableau {
+    background-color: #be5d68;
+}
+
+.deconnection-text {
+    margin-top: 12rem;
+}
+
+footer {
+    height: 15vh ;
+    background-color: #be5d68;
+    color: white;
+}

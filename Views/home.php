@@ -18,15 +18,21 @@ require_once "../Controllers/home-controller.php";
     <?php if ($display == 'cards') { ?>
 
         <!-- Affichage en cards -->
-        <div class="row">
+        <div class="row p-0 mx-0 mb-5">
             <?php
-            foreach ($array as $key => $value) { ?>
+            foreach ($array as $key => $value) {
+
+                // nous allons trier en fonction du genre
+                if ($search != 'lesDeux' && $value["gender"] != $search) {
+                    continue;
+                }
+            ?>
                 <div class="col-3 mt-3">
                     <div class="card">
                         <img src="../Public/img/<?= $value["picture"] ?>.webp" class="foto" alt="<?= $value["pseudo"] ?>">
                         <div class="card-body">
                             <p class="card-title fs-5"><?= $value["pseudo"] ?></p>
-                            <p class="card-text"><?= $value["gender"]  ?> cherche <?= $value['search'] ?></p>
+                            <p class="card-text"><?= $value["gender"] ?> cherche <?= $value['search'] ?></p>
                             <a href="index2.php?page=<?= $key ?>" class="btn ecriture border border-dark">Choisir</a>
                         </div>
                     </div>
@@ -37,7 +43,7 @@ require_once "../Controllers/home-controller.php";
     <?php } else { ?>
 
         <!-- Affichage en liste / tableau -->
-        <table class="table">
+        <table class="table mb-5">
             <thead>
                 <tr class="text-center align-middle tableau">
                     <th scope="col">#</th>
@@ -49,7 +55,14 @@ require_once "../Controllers/home-controller.php";
             </thead>
             <tbody>
                 <?php
-                foreach ($array as $key => $value) { ?>
+                foreach ($array as $key => $value) {
+
+                    // nous allons trier en fonction du genre
+                    if ($search != 'lesDeux' && $value["gender"] != $search) {
+                        continue;
+                    }
+
+                ?>
                     <tr class="text-center align-middle">
                         <td><?= $key ?></td>
                         <td><img class="liste" src="../Public/img/<?= $value["picture"] ?>.webp"></td>

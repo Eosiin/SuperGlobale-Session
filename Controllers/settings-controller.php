@@ -1,6 +1,5 @@
 <?php
 
-
 // redirection si l'utilisateur n'est pas loggé
 if (!isset($_SESSION['USER'])) {
     header('Location: login.php');
@@ -8,7 +7,7 @@ if (!isset($_SESSION['USER'])) {
 }
 
 // var_dump de contrôle
-var_dump($_POST);
+// var_dump($_POST);
 
 // Nous recherchons si il y a une validation de formulaire via une méthode POST (Ca correspond à une validation via un bouton)
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
