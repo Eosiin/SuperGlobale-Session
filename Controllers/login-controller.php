@@ -36,5 +36,6 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
             'role' => 1
         ];
         header('Location: home.php');
+        exit;
     }
 }

@@ -9,7 +9,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Paramètres</a>
+                            <a class="nav-link text-light" href="settings.php">Paramètres</a>
                         </li>
                         <li class="nav-item">
                             <!-- Nous controllons si la $_SESSION['USER'] isset -->
